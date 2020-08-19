@@ -7,8 +7,10 @@ describe('Comparadores comunes', () => {
     name: "Oscar",
     lastName: "Barajas"
   }
-
   test('Igualdad de elementos', () => {
     expect(user).toEqual(user2);
   });
+  test('No son exactamente iguales', () => {
+    expect(user).not.toEqual(user2);
+  })
 });
